@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/caja.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://vipboxpanama.com/"> 
+    <meta name="description" content="Compra por internet rapido y seguro, en vipboxpanama te atendemos como un cliente VIP y  te asesoramos de una manera rápida y honesta durante todo el proceso de tu próxima compra por internet.">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>VipBox Panamá</title>
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed"> 
+            <nav class="white">
+                <div class="nav-wrapper">
+                    <a href="https://vipboxpanama.com/"><img src="img/logo-5.png" class="responsive-img brand-logo l"></a>
+                    <a href="https://vipboxpanama.com/"><img src="img/logo-4.png" class="responsive-img brand-logo lo"></a>
+                    <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons indigo-text darken-4" id="menu">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a  id="a0" class="indigo-text darken-4">PLACE YOUR ORDER!</a></li>
+                        <li><a  id="a1" class="indigo-text darken-4">RATES</a></li>
+                        <li><a  id="a2" class="indigo-text darken-4">VIP PLANS</a></li>
+                        <li><a  id="a3" class="indigo-text darken-4">FREQUENT QUESTIONS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div> 
+            <ul class="sidenav" id="mobile-demo">
+                <li><a  id="a5" class="indigo-text darken-4">PLACE YOUR ORDER!</a></li>
+                <li><a  id="a6" class="indigo-text darken-4">RATES</a></li>
+                <li><a  id="a7" class="indigo-text darken-4">VIP PLANS</a></li>
+                <li><a  id="a8" class="indigo-text darken-4">FREQUENT QUESTIONS</a></li>
+            </ul>
+    </header>
+    <main>
+        <div class="conatiner">
+                <div class="parallax-container">
+                    <div class="parallax"><img src="img/13.jpg" class="parallax-img" alt="50%" ></div>
+                    <p class="center-align indigo-text darken-4 parallax-text">FAST AND SECURE ONLINE SHOPPING</p>
+                </div>
+
+        </div>
+        </div>
+        <div class="conatiner">
+            <div class="row">
+                <div class="col">
+                    <div class="pedido">
+                        <h3 class="titulo-de-pedido">PLACE YOUR ORDER!</h3>
+                        <p class="intro" style="font-size: 1.40em;">Send us the following information and we will be contacting you in the next hours. <br> Do not hesitate to contact us and you will receive VIP attention, fast and reliable.</p>
+                            <div id="caja1" class="caja1">
+                                <form class="formulario" id="formulario" method="post">
+                                    <div class="input-field">
+                                        <label for="nombre" style="font-size: 1.45em;" class="arreglar-telefono">Name</label>
+                                        <input type="text"  class="validate  nombre" id="nombre"  name="nombre" pattern="[A-Za-zñáéóí]+">
+                                        <div class="mt-3" id="alerta1">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" class="validate apellido" id="apellido" name="apellido" pattern="[A-Za-zñáéóí]+">
+                                        <label for="apellido" style="font-size: 1.45em;" class="arreglar-telefono">Last Name</label>
+                                        <div class="mt-3" id="alerta2">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="telefono" class="arreglar-telefono" style="font-size: 1.45em;">Telephone (Enter number without dashes)</label>
+                                        <input type="text"  class="validate telefono" id="telefono" name="telefono" pattern="[0-9]+" >
+                                        <div class="mt-3" id="alerta3">
+                                        </div>
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="email" style="font-size: 1.45em;" class="arreglar-telefono">Email</label>
+                                        <input type="email"  class="validate email" id="email" name="email" >
+                                        <div class="mt-3" id="alerta4">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="link_pedido" style="font-size: 1.45em;" class="arreglar-telefono">Order link</label>
+                                        <input type="url" id="pedido" class="validate link" name="link_pedido">
+                                    </div>
+                                    <textarea name="detalles_pedido" cols="55" rows="6" placeholder="Detalles adicionales sobre el pedido" class="detalles_pedido" id="detalles_pedido"></textarea>
+                                    <div class="mt-3" id="alerta5"></div>
+                                    <br>
+                                    <input type="submit" value="Enviar" class="btn btn-primary"></input>
+                                    <div class="mt-3" id="alerta6"></div>
+                                    <div class="mt-3" id="alerta7"></div>
+                                    <div class="mt-3" id="alerta8"></div>
+                                    <div class="mt-3" id="alerta9"></div>
+                                    <div class="mt-3" id="alerta10"></div>
+                                </form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h4 style="text-align: center; font-size: 2.5em;margin-bottom: 20px;">Our Services</h4>
+                    <p style="text-align: center;margin: auto;
+                    display: block;">We have 10 years of experience in freight logistics from any part of the world to Panama and 2 years under the
+                        Vip Box Panama name. <br> Our goal is to provide the best E-commerce freight logistics experience to Panama, <br> standing out in the market for our speed in deliveries and honesty in communication and rates.</p>
+                </div>
+            </div>
+        </div>
+        <div class="seccion2  white" id="seccion1">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md z-depth-1 grey lighten-4" style="margin-bottom: 20px;">
+                        <div class="porti">
+                            <img src="img/2.jpg" alt="" class="img-tar2" id="img-tar2">
+                            <div class="white">
+                                <h3 class="compramos blue-text darken-4"><b>WE BUY FOR YOU</b></h3>
+                                <p class="black-text"> If you don't have a credit card or simply don't want to use it when buying online, <br> don't worry, at VipBox we make the purchase using our credit card at no additional cost.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md z-depth-1  grey lighten-4" style="margin-bottom: 20px;">
+                        <div class="rapida-entrega">
+                            <img src="img/3.jpg" alt="" class="img-tar3" id="img-tar3">
+                            <div class="white">
+                                <h3 class="titulo-tarifas blue-text darken-4"><b>FAST DELIVERY</b></h3>
+                                <p class="rapida black-text">Packages arrive in Panama 48hr later (2 business days) after arriving in Miami. Upon arrival in Panama, packages will be delivered the same day after coordination at your home or work place.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md z-depth-1 grey lighten-4" style="margin-bottom: 20px;">
+                        <div class="a-domicilio">
+                            <div>
+                                <img src="img/5.jpg" alt="" class="img-tar4" id="img-tar4">
+                            </div>
+                            <div class="white">
+                                <h3 class="titulo-tarifas blue-text darken-4 "><b>FREE HOME</b></h3>
+                                <p class="descripccion black-text">Receive your orders in the comfort of your home or office totally free in Panama City. Deliveries in the outskirts and interior of the country with additional cost as coordinated with the customer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="container">
+            <h4 style="text-align: center; font-size: 2.5em;
+            margin-bottom: 20px;">Rates</h4>
+            <div class="row justify-content-md-center">
+                <div class="col-md-4 z-depth-1 grey lighten-4" style="margin-bottom: 20px;">
+                    <div class="porti">
+                        <img src="img/14.jpg" style="max-width: 50%;"  alt="">
+                        <div class="white">
+                            <h3 class="titulo-tarifas blue-text darken-4 " style="text-align: center;"><b>AIR CARGO FEE</b></h3>
+                            <p style="text-align: center;">We have the best airfreight rate of $2.50 per pound from the first pound, consult us for more information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 z-depth-1 grey lighten-4" style="margin-bottom: 20px;">
+                    <div class="porti">
+                        <img src="img/15.jpg" style="max-width: 50%;" alt="">
+                        <div class="white">
+                            <h3 class="titulo-tarifas blue-text darken-4 " style="text-align: center;"><b>OCEAN FREIGHT RATE</b></h3>
+                            <p style="text-align: center;">Our rate of $10 per cubic foot ensures that you can bring your oversized cargo at the lowest possible cost, contact us for more information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" seccion3" id="seccion2">
+            <div class="container">
+                <h4 style="text-align: center;">Vip Plans</h4>
+                <div class="row">
+                        <div class="col-md">
+                            <div class="shadow p-3 mb-5 bg-white rounded paquete" style="height: 300px;">
+                                <h4 class="eco">Eco Plan:</h4> 
+                                <i class="fa fa-leaf hoja" aria-hidden="true"></i><hr>
+                                <p class="parra">-Pay $72 and receive 30 pounds per month.
+                                     <br> -Pound additional $2.45 on this plan.</p>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="shadow p-3 mb-5 bg-white rounded paquete" style="height: 300px;">
+                                <h4 class="eco">VIP Plan:</h4> 
+                                <i class="far fa-gem gema"></i><hr>
+                                <p class="parra">-Pay $138 and receive 60 pounds per month. <br>
+                                     -Additional pounds at $2.35 on this plan. </p>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="shadow p-3 mb-5 bg-white rounded paquete" style="height: 300px;">
+                                <h4 class="eco">Plan VIP Business:</h4> 
+                                <i class="fa fa-briefcase maleta" aria-hidden="true"></i><hr>
+                                <p class="parra">-Pay $387 and receive 180 pounds per month. <br>
+                                    -Additional pounds at $2.15 on this plan.</p>
+                            </div>
+                        </div>
+                </div>
+                    <div class="card white w-100">
+                        <div class="card-content  blue-text ">
+                            <span class="card-title text-center">Note</span>
+                            <p class="text-center">-Minimum weight per package is 1 pound. <br> <br>
+                                -Air cargo arrives in Panama within 48 hours after arriving in Miami, except in situations of force majeure <br> <br> <br> <br>
+                                -The plans are valid for 30 days after receiving the payment of the same. <br><br> <br>
+                                -We do not charge handling, customs charges, use of our credit card, or for the locker in Miami.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="seccion4" id="seccion3">
+            <div class="container-main pb-5"> 
+                <h2 class="titulo center-align">FREQUENTLY ASKED QUESTIONS</h2>
+                <ul class="collapsible popout">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">arrow_right</i>What is the price per pound for airfreight?</div>
+                        <div class="collapsible-body grey lighten-5"><p>-All air packages with a minimum weight of 1lb will have a unit cost of <b>$2.50 per pound.</b><br><br><br> -The minimum weight is 1lb and the rate is calculated based on 1lb units. For example if the package weighs 2.3lbs 3lb is posted.<br><br><br>
+                            -If there is a 10lbs difference between the actual weight and the volumetric weight it is charged at volumetric weight rate.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">arrow_right</i>How is the volumetric weight calculated?</div>
+                        <div class="collapsible-body grey lighten-5"> <p>-The volumetric weight is calculated using the following package measurements in inches:</p>
+                            <p><b>(Length x Width x Height) / 166</b><br><br><br> -The volumetric weight fee is $2.00 per pound and applies only if there is a 10lbs difference from the actual weight. </p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">arrow_right</i>What is the delivery time?</div>
+                        <div class="collapsible-body grey lighten-5"><p>Once the package arrives at our Miami locker in a period of no less than 48 hours</b><br><br><br>- Upon arrival in Panama we will make arrangements to deliver the package the same day.
+                            48 hours</b><br><br><br>On arrival in Panama we will make arrangements with you to deliver the package the same day.<br><br>-Deliveries in Panama City have no additional cost.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">arrow_right</i>Can I pick up my package?</div>
+                        <div class="collapsible-body grey lighten-5"><p>-Our service is based on home delivery. <b>ALL </b>packages will be delivered to your home, workplace or common site, regardless of size or weight. <br><br>-For the metropolitan area from Clayton to Villa Lucre, deliveries are made at no additional cost. <br><br>-We deliver to Villa Lucre, Santa Maria, San Antonio, Brisas del Golf, December 24th, Panama Pacifico and nationwide for an additional cost regardless of the amount of packages or pounds.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">arrow_right</i>When do I have to pay the shipping cost of the package?</div>
+                        <div class="collapsible-body grey lighten-5"><p>-All packages are kept free of charge for a period of 7 calendar days, counted from the date the mail or message is sent with the amount to be paid. <br><br>-The payment of the shipment can be by <b>ACH, Yappy or cash.</b><br><br><br>-Past the period of <b>7 calendar days without the customer paid his package</b>, the company reserves the right to put the product on sale. </p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">arrow_right</i>What happens if I put the wrong delivery address in Miami?</div>
+                        <div class="collapsible-body grey lighten-5"><p>-If for some reason you forget to put your code in the shipping address, 
+                        we will try to track it as it may be received and misidentified in our warehouse in Miami.<br><br>-If you put a different address than the one provided by Vip Box Panama, <b>the company is not responsible for the package</b>.
+                        different from the one provided by Vip Box Panama, <b>the company is not responsible for the package</b>. <br><br>-We are willing to guide you at the time of placing the delivery address on the website where you make the purchase.</p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">arrow_right</i>Do you want to know where your package is?</div>
+                        <div class="collapsible-body grey lighten-5"><p>To find out if your package has already been received in Miami, just copy the TRACKING number provided by the seller and paste it in the following link.
+                            provided by the seller and paste it in the following link, this way you will know if the package <br>
+                            has arrived in Miami.  Note: do not confuse TRACKING with ORDER NUMBER<br>.</p> 
+                            <a href="https://www.packagetrackr.com/" class="btn btn-primary mt-3" id="busca"><i class="fas fa-search lupa" id="lupa"></i>SEARCH FOR YOUR PACKAGE</a></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">arrow_right</i>Do you charge any additional fee?</div>
+                        <div class="collapsible-body grey lighten-5"><p>-Our rate is based solely on the weight of the package and we do not charge any additional Costco's or surprises such as customs, handling, import taxes, consolidation, etcetera. <br><br>-Our priority is to offer a simple and fair shipping service to our customers.</p></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="servicios" id="servi">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md"><h2 class="contanctanos">Contact us at</h2>
+                        <a href="mailto:info@vipboxpanama.com" class="correo"><i class="material-icons" id="icono1">email</i> info@vipboxpanama.com</a>
+                        <p class="contacto"><i class="material-icons" id="icono2">phone_in_talk</i> +507 6731-0030</p>
+                    </div>
+                    <div class="col-md">
+                        <h4 class="center-align">VIPBOX PANAMÁ:</h4>
+                        <p>
+                            We are a Panamanian company dedicated to freight logistics related to E-commerce.<br> 
+                        </p>
+                    </div>
+                    <div class="col-md"><h3>Social Networking</h3>
+                       <div class="text-center">
+                        <a href="https://api.whatsapp.com/send?phone=50767310030&text=&source=&data=" class="whatsapp"><i class="fab fa-whatsapp-square"   id="whatsapp"></i></i></a>
+                        <a href="https://www.instagram.com/vipboxpanama/" class="instagram "><i class="fab fa-instagram-square"id="instagram" ></i></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <div class="container-fluid">
+         <div class="row ">
+             <div class="col">
+                    <p class="pie-de-pagina"> Copyright 2020-2021| Vip Box Panamá | All Rights Reserved |</p>
+                    <p class="pie-de-pagina">Designed and developed by: <a href="https://www.instagram.com/silicatopa/" style="text-decoration: none;">Jonathan Rodríguez</a></p>
+             </div>
+         </div>
+     </div>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bcb7d383df.js" crossorigin="anonymous"></script>
+</body>
+</html>
